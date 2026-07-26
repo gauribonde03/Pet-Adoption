@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./About.css";
 
 const families = [
@@ -25,6 +26,8 @@ const families = [
 ];
 
 const About = () => {
+
+  const navigate = useNavigate()
   return (
     <div className="about">
 
@@ -43,7 +46,9 @@ const About = () => {
             a warm home, love, and a second chance.
           </p>
 
-          <button>Learn More</button>
+          <button 
+          onClick={() => navigate("/contact")}
+          >Learn More</button>
 
         </div>
 

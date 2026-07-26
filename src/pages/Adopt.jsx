@@ -104,7 +104,7 @@ const cats = [
 ];
 const Adopt = () => {
   const [activeTab, setActiveTab] = useState("dogs");
-
+  const navigate = useNavigate()
   const pets = activeTab === "dogs" ? dogs : cats;
 
   return (
@@ -151,7 +151,9 @@ const Adopt = () => {
 
             <p><strong>Gender:</strong> {pet.gender}</p>
 
-            <button>Adopt Me ❤️</button>
+            <button
+            onClick={() => navigate("/contact")} 
+            >Adopt Me ❤️</button>
 
           </div>
         ))}

@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./PetSlider.css";
 
 const pets = [
@@ -24,12 +25,15 @@ const pets = [
 ];
 
 const PetSlider = () => {
+
+  const navigate = useNavigate()
+
   return (
     <section className="pets">
 
       <h2>Meet Our Friends 🐾</h2>
 
-      <div className="pet-container">
+      <div className="pet-container" onClick={() => navigate("/contact")}>
 
         {pets.map((pet, index) => (
           <div className="pet-card" key={index}>
@@ -40,7 +44,7 @@ const PetSlider = () => {
 
             <p>{pet.type}</p>
 
-            <button>Adopt Me</button>
+            <button onClick={() => navigate("/contact")}>Adopt Me</button>
 
           </div>
         ))}
