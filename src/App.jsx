@@ -9,6 +9,7 @@ import Quote from "./components/Quote";
 import Adopt from "./pages/Adopt";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 function Home() {
   return (
