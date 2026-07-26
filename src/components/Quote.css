@@ -1,0 +1,19 @@
+.quote {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerdiv {
+    padding:4rem;
+    width: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 5rem
+}
